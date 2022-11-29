@@ -19,7 +19,7 @@ const AddComment = () => {
     };
     try {
       let response = await fetch(
-        `https://striveschool-api.herokuapp.com/api/comments/${this.props.commentId}`,
+        `https://striveschool-api.herokuapp.com/api/comments/${props.commentId}`,
         options
       );
       let data = await response.json();
