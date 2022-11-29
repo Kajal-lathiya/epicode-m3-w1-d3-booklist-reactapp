@@ -2,6 +2,7 @@ import { Component } from "react";
 import { Form, Button } from "react-bootstrap";
 
 class AddComment extends Component {
+
   render() {
     return (
       <div>
@@ -13,6 +14,7 @@ class AddComment extends Component {
           <Form.Group controlId="exampleForm.ControlSelect1">
             <Form.Label>Rate</Form.Label>
             <Form.Control as="select">
+              <option>Select rate</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -21,9 +23,11 @@ class AddComment extends Component {
             </Form.Control>
           </Form.Group>
         </Form>
-        <Button variant="primary">{this.props.cat}</Button>
+        <Button variant="primary" className="mb-1">
+          Submit
+        </Button>
       </div>
-    )
+    );
   }
 }
 
